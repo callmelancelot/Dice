@@ -3,17 +3,17 @@
   void setup()
   {
       noLoop();
-      size(1700,1000);
-      one = new Die(150,200);
-      two = new Die(450,200);
-      three = new Die(750,200);
-      four = new Die(1050,200);
-      five = new Die(1350,200);
-      six = new Die(150,550);
-      seven = new Die(450,550);
-      eight = new Die(750,550);
-      nine = new Die(1050,550);
-      ten = new Die(1350,550);
+      size(850,500);
+      one = new Die(75,100);
+      two = new Die(225,100);
+      three = new Die(375,100);
+      four = new Die(525,100);
+      five = new Die(675,100);
+      six = new Die(75,225);
+      seven = new Die(225,225);
+      eight = new Die(375,225);
+      nine = new Die(525,225);
+      ten = new Die(675,225);
   }
   void draw()
   {
@@ -38,7 +38,7 @@
       nine.show();
       ten.roll();
       ten.show();
-      textSize(50);
+      textSize(25);
       fill(255,255,255);
       text("The total of all dice is " + total + " !",500,500);
       total = 0;
@@ -64,35 +64,35 @@
       void show()
       {
           fill(255,255,255);
-          rect(myX,myY,200,200);
+          rect(myX,myY,100,100);
           fill(0,0,0);
           if(myRoll == 1){
-            ellipse(myX+100,myY+100,40,40);
+            ellipse(myX+50,myY+50,20,20);
           }else if(myRoll == 2){
-            ellipse(myX+60,myY+100,40,40);
-            ellipse(myX+140,myY+100,40,40);
+            ellipse(myX+30,myY+50,20,20);
+            ellipse(myX+70,myY+50,20,20);
           }else if(myRoll == 3){
-            ellipse(myX+60,myY+50,40,40);
-            ellipse(myX+100,myY+100,40,40);
-            ellipse(myX+140,myY+150,40,40);
+            ellipse(myX+30,myY+25,20,20);
+            ellipse(myX+50,myY+50,20,20);
+            ellipse(myX+70,myY+75,20,20);
           }else if(myRoll == 4){
-            ellipse(myX+60,myY+50,40,40);
-            ellipse(myX+140,myY+50,40,40);
-            ellipse(myX+60,myY+150,40,40);
-            ellipse(myX+140,myY+150,40,40);
+            ellipse(myX+30,myY+25,20,20);
+            ellipse(myX+70,myY+25,20,20);
+            ellipse(myX+30,myY+75,20,20);
+            ellipse(myX+70,myY+75,20,20);
           }else if(myRoll == 5){
-            ellipse(myX+60,myY+50,40,40);
-            ellipse(myX+140,myY+50,40,40);
-            ellipse(myX+100,myY+100,40,40);
-            ellipse(myX+60,myY+150,40,40);
-            ellipse(myX+140,myY+150,40,40);
+            ellipse(myX+30,myY+25,20,20);
+            ellipse(myX+70,myY+25,20,20);
+            ellipse(myX+50,myY+50,20,20);
+            ellipse(myX+30,myY+75,20,20);
+            ellipse(myX+70,myY+75,20,20);
           }else if(myRoll == 6){
-            ellipse(myX+60,myY+50,40,40);
-            ellipse(myX+140,myY+50,40,40);
-            ellipse(myX+60,myY+100,40,40);
-            ellipse(myX+140,myY+100,40,40);
-            ellipse(myX+60,myY+150,40,40);
-            ellipse(myX+140,myY+150,40,40);
+            ellipse(myX+30,myY+25,20,20);
+            ellipse(myX+70,myY+25,20,20);
+            ellipse(myX+30,myY+50,20,20);
+            ellipse(myX+70,myY+50,20,20);
+            ellipse(myX+30,myY+75,20,20);
+            ellipse(myX+70,myY+75,20,20);
           }
       }
   }
